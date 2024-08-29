@@ -100,6 +100,144 @@ nav li a {
 
 /* sponsors styles end */
 
+/* popular collection styles start */
+
+.popular_cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  /* margin: 0 auto; */
+}
+
+.populer_title {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 250% */
+  text-align: center;
+}
+
+.popular_card {
+  /* width: 100%;  330px -30px = 300px */
+  padding: 17px 15px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.popular_card img {
+  width: 100%;
+}
+
+.popular_card_title {
+  color: #18191f;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  /* margin-top: 16px; */
+  /* line-height: 40px;  142.857% */
+}
+
+.popular_price {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  /* margin-top: 6px; */
+  /*line-height: 150%;  36px */
+}
+
+.popular_description {
+  color: #787885;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+  /* margin-top: 10px; */
+}
+
+.see_more {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.see_more a {
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* popular collection styles end */
+
+/* featured styles start */
+
+.featured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.featured_title {
+  color: #0a0826;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 157.895% */
+}
+
+.featured_description {
+  color: #6c6c6c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+}
+
+.featured_btn {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+
+/* featured styles end */
+
+/* footer styles start */
+
+footer {
+  background-color: #0a0826;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+footer p {
+  color: #d9dbe1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; /* 171.429% */
+}
+
+/* footer styles end */
+
 /* =======================responsive mobile devices======================= */
 
 @media screen and (max-width: 576px) {
@@ -135,5 +273,51 @@ nav li a {
     justify-content: center;
     gap: 30px;
     padding: 0 20px;
+  }
+
+  .popular_cards_container {
+    grid-template-columns: 1fr;
+  }
+  .featured {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .featured img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner {
+    flex-direction: column-reverse;
+    background-position: top;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .sponsors {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .popular_cards_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    /* margin: 0 auto; */
+  }
+
+  .featured {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .featured img {
+    width: 100%;
   }
 }
